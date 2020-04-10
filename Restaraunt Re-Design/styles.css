@@ -1,0 +1,496 @@
+@charset "UTF-8";
+body{
+    margin: 0px 0px 0px 0px;
+    font-family: raleway;
+    font-style: normal;
+    font-weight: 100;
+	background-color: #201A17;
+	
+}
+html, body{
+	height: 100%;
+}
+header{
+	background-color: #201A17;
+	padding: 32px;
+	
+	}
+header img.navlogo{
+    float: center;
+    display: inline-block;
+}
+header nav
+nav{
+    background: #201A17;
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Raleway;
+	z-index: 3;
+}
+nav ul{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	float: center;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+nav ul li a{
+	display: block;
+	color:#96918E;
+	text-decoration: none;
+	padding: 10px 50px;
+	font-weight: bold;
+	font-size: 20px;
+	font: Raleway;
+}
+nav ul li a.active,
+nav ul li a:hover{
+	color:#96918E;
+	background:#362D29
+}
+.column1{
+	
+	display: inline-block;
+	float: left;
+
+}
+.hideawaylogo{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	
+}
+
+.toggle{
+	width: 100%;
+	background: #201A17;
+	box-sizing: border-box;
+	display: none;
+	
+}
+.toggle{
+	display: none;
+}
+.column2{
+
+	display: none;
+	
+}
+.mobileMission{
+	display: none;
+}
+
+.toggle span{
+	cursor: pointer;
+	font-weight: bold;
+}
+
+@media (max-width: 950px){
+
+	.row{
+		display: flex;
+	}
+
+	.column1 {
+  		float: left;
+  		flex: 33.33%;
+  		padding: 5px;
+}
+		.toggle{
+		display:inline-block;
+			
+			
+	}
+		.column2 {
+		display: inline-block;
+  		flex: 33.33%;
+  		padding: 5px;
+}
+
+	.navlogo{
+		display: inline-block;
+		position: relative;
+	}
+	nav{
+		padding: 0;
+		z-index: 3;
+		width: 100%;
+	}
+	nav ul{
+		float: none;
+		text-align: center;
+		display: none;
+		z-index: 3;
+	}
+	nav ul.active{
+		display: inline-block;
+		z-index: 3;
+	}
+	nav ul li{
+		display: block;
+		z-index: 3;
+		background-color:#201A17;
+	
+		
+		
+	}
+	.heroLogo{
+		display: none;
+	}
+	footer{
+		display:inline-block;
+		font-size: 180%;
+	}
+
+	.mobileMission{
+		display: block;
+		font-size: 100%;
+		text-align: center;
+		position: relative;
+		color: #A19E9D;
+		padding: 20px;
+		
+	}
+	.maps{
+		display: none;
+	}
+
+
+}
+
+.hero{
+	position: fixed;
+	top:100px;
+	bottom: 0px;
+	left:0px;
+	right: 0px;
+}
+slider {
+ display: block;
+ width: 100%;
+ height: 100%;
+ background-color: #1f1f1f;
+ overflow: hidden;
+ position: absolute;
+ z-index: 1;
+}
+slider > * {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+ background: #1f1f1f;
+ animation: slide 12s infinite;
+ overflow: hidden;
+}
+slide:nth-child(1){
+ left: 0%;
+ animation-delay: -1s;
+ background-image: url("Images/HideAwayBar.jpg");
+ background-size: cover;
+ background-position: center;
+}
+slide:nth-child(2){
+ animation-delay: 2s;
+ background-image: url("Images/Hideawaybar2.jpg");
+ background-size: cover;
+ background-position: center;
+}
+slide:nth-child(3){
+ animation-delay: 5s;
+ background-image: url("Images/HideawayDining.jpg");
+ background-size: cover;
+ background-position: center;
+}
+slide:nth-child(4){
+ left: 0%;
+ animation-delay:8s;
+ background-image: url("Images/HideawayPatio.jpg");
+ background-size: cover;
+ background-position: center;
+}
+slide:nth-child(4){
+ left: 0%;
+ animation-delay:8s;
+ background-image: url("Images/HideawayPatio.jpg");
+ background-size: cover;
+ background-position: center;
+}
+slide p {
+ display: inline-block;
+ width: 100%;
+ margin-top: 340px;
+ color: #fff;
+}
+@keyframes slide {
+ 0% { left: 100%; width: 100%; }
+ 5% { left: 0%; }
+ 25% { left: 0%; }
+ 30% { left: -100%; width: 100%; }
+ 30.0001% { left: -100%; width: 0%; }
+ 100% { left: 100%; width: 0%; }
+}
+.hero{
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	
+}
+.heroLogo{
+	padding: 100px 65px 100px 0px;
+    position: fixed;
+	max-height: auto;
+  	max-width: 100%;
+    z-index: 2;
+	
+	
+	
+}
+
+.events{
+	background-color: #201A17;
+	width: auto;
+	height: 100%;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	font-size: 90%;
+	color: #A19E9D;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	
+}
+.footRow{
+	display: flex;
+	
+}
+.footCol1{
+	float: left;
+	flex: 33.33%;
+	padding: 20px;
+}
+.footCol2{
+	float: right;
+	flex: 33.33%;
+	padding: 20px;
+}
+
+.Starterrow{
+	color: #A19E9D;
+	font-size: 20px;
+	text-align: center;
+	margin: 0px auto;
+    margin-top: 0px;
+ 	display: inline-block;
+ 	width: 100%;
+ 	height: 100%;
+	background-image: url("Images/fries.jpg");
+	background-size: cover;
+ 	background-position: center;
+}
+.Startercol1{
+	padding-left: 150px;
+	float: left;
+	display: inline-block;
+	font-size: 20px;
+	color: #A19E9D;
+	text-align: center;
+	width: 35%;
+}
+.Startercol2{
+	padding-right: 150px;
+	float: right;
+	display: inline-block;
+	font-size: 20px;
+	color: #A19E9D;
+	text-align: center;
+	width: 35%;
+}
+.break{
+	background-color: #201917;
+	color: #6C6968;
+	height: 200px;
+	width: 100%;
+	display: block;
+	margin: 0px auto;
+	margin-top: 0px;
+	
+}
+.Saladsrow{
+	
+	font-size: 20px;
+	color: #A19E9D;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 0px;
+ 	display: inline-block;
+ 	width: 100%;
+ 	height: 100%;
+	background-image: url("Images/salad.jpg");
+	background-size: cover;
+ 	background-position: center;
+}
+.Entreesrow{
+	
+	font-size: 20px;
+	color: #A19E9D;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 0px;
+ 	display: inline-block;
+ 	width: 100%;
+ 	height: 100%;
+	background-image: url("Images/Entree.jpg");
+	background-size: cover;
+ 	background-position: center;
+}
+.Pubrow{
+	
+	font-size: 20px;
+	color: #A19E9D;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 0px;
+ 	display: inline-block;
+ 	width: 100%;
+ 	height: 100%;
+	background-image: url("Images/crab.jpg");
+	background-size: cover;
+ 	background-position: center;
+}
+
+.gallery slider{
+	font-size: 40px;
+	color: #A19E9D;
+	text-align: center;
+ display: block;
+ width: 100%;
+ height: 100%;
+ background-color: #1f1f1f;
+ overflow: hidden;
+ position: absolute;
+ z-index: 1;
+}
+#gallery slider > * {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+ background: #1f1f1f;
+ animation: slide 12s infinite;
+ overflow: hidden;
+}
+#gallery slide:nth-child(1){
+ left: 0%;
+ animation-delay: -1s;
+ background-image: url("Images/summer2.jpg");
+ background-size: cover;
+ background-position: center;
+}
+#gallery slide:nth-child(2){
+ animation-delay: 2s;
+ background-image: url("Images/summerday.jpg");
+ background-size: cover;
+ background-position: center;
+}
+#gallery slide:nth-child(3){
+ animation-delay: 5s;
+ background-image: url("Images/summerpatio.jpg");
+ background-size: cover;
+ background-position: center;
+}
+#gallery slide:nth-child(4){
+ left: 0%;
+ animation-delay:8s;
+ background-image: url("Images/fullbar.jpg");
+ background-size: cover;
+ background-position: center;
+}
+#gallery slide:nth-child(4){
+ left: 0%;
+ animation-delay:8s;
+ background-image: url("Images/gretna.jpg");
+ background-size: auto;
+ background-position: center;
+}
+#gallery slide p {
+	font-size: 50px;
+	color:#FFFFFF;
+ text-align: center;
+	
+ display: inline-block;
+ width: 100%;
+ margin-top: 340px;
+
+}
+
+.heroEmploy{
+	color: #A19E9D;
+	font-size: 30px;
+	text-align: center;
+	position: fixed;
+ 	display: inline-block;
+ 	width: 100%;
+ 	height: 100%;
+	background-image: url("Images/BartenderProfile.jpg");
+	background-size: cover;
+ 	background-position: center;
+}
+.events{
+	background-color: #201A17;
+	display:inline-block;
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	margin-top: 0px;
+	color: #A19E9D;
+	font-size: 30px;
+	text-align: center;
+	
+}
+.navHero{
+	
+	background-color: #201A17;
+	display:inline-block;
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	margin-top: 0px;
+	color: #A19E9D;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+.navigate{
+	font-size: 25px;
+	width: 100%;
+	color:#A19E9D
+}
+.directions{
+	background-color: inherit;
+	color: #A19E9D;
+	
+  	font-size: 16px;
+  	cursor: pointer;
+  	display: inline-block;
+	
+}
+.directions:hover{
+	background:#362D2A; 
+}
+
+
+
+
+
+	
+
+
